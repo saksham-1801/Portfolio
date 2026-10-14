@@ -1,15 +1,16 @@
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6f4ef">
+  <meta name="theme-color" content="#0c0d12">
   <meta name="description" content="Saksham Kumar Ray — Information Science student, developer, and curious builder in Bengaluru.">
   <title>Saksham Kumar Ray — Portfolio</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="theme.css">
   <link rel="stylesheet" href="motion.css">
-  <script>try { const savedTheme = localStorage.getItem('portfolio-theme'); if (savedTheme === 'dark' || savedTheme === 'light') document.documentElement.dataset.theme = savedTheme; else if (window.matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.dataset.theme = 'dark'; } catch {}</script>
+  <link rel="stylesheet" href="refresh.css">
+  <script>try { const savedTheme = localStorage.getItem('portfolio-theme-v2'); if (savedTheme === 'dark' || savedTheme === 'light') document.documentElement.dataset.theme = savedTheme; else if (window.matchMedia('(prefers-color-scheme: dark)').matches) document.documentElement.dataset.theme = 'dark'; } catch {}</script>
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -37,12 +38,18 @@
         <div class="hero-actions"><a class="button button-dark" href="#work">Explore my work <span aria-hidden="true">↓</span></a><a class="text-link" href="#about">A little about me <span aria-hidden="true">↗</span></a></div>
         <div class="hero-meta"><span>BASED IN <b>Bengaluru, India</b></span><span>STUDYING <b>B.Tech Information Science · CSE</b></span></div>
       </div>
-      <div class="hero-art" aria-label="Decorative abstract portrait placeholder">
-        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
-        <div class="art-card"><div class="art-top"><span>THE HUMAN BEHIND THE WORK</span><span>01 / 04</span></div><div class="portrait-placeholder"><span>SKR</span><i class="spark spark-one">✳</i><i class="spark spark-two">✳</i></div><div class="art-bottom"><span>CURIOUS BY NATURE</span><span>MADE WITH INTENTION</span></div></div>
-        <div class="floating-note note-top"><span class="note-icon">✳</span><span>Ideas into<br><b>real things</b></span></div>
-        <div class="floating-note note-bottom"><span class="note-icon note-lilac">↗</span><span>Good work,<br><b>good people</b></span></div>
-        <span class="hero-side-label">DESIGN · BUILD · LEARN</span>
+      <div class="hero-art" role="img" aria-label="Glowing abstract Saksham initials surrounded by orbiting technology details">
+        <div class="orb-grid" aria-hidden="true"></div>
+        <div class="orb-ring orb-ring-one" aria-hidden="true"></div>
+        <div class="orb-ring orb-ring-two" aria-hidden="true"></div>
+        <div class="orb-ring orb-ring-three" aria-hidden="true"></div>
+        <div class="orb-core" aria-hidden="true"><span>SKR</span><small>IDEAS INTO INTERFACES</small></div>
+        <span class="orb-chip orb-chip-top" aria-hidden="true"><i></i> INFORMATION SCIENCE</span>
+        <span class="orb-chip orb-chip-left" aria-hidden="true">&lt; BUILD /&gt;</span>
+        <span class="orb-chip orb-chip-right" aria-hidden="true">LEARN · CREATE</span>
+        <span class="orb-spark orb-spark-one" aria-hidden="true">✳</span>
+        <span class="orb-spark orb-spark-two" aria-hidden="true">✦</span>
+        <span class="orb-caption" aria-hidden="true">BENGALURU · INDIA</span>
       </div>
     </section>
 
@@ -83,6 +90,9 @@
   <div class="toast" role="status" aria-live="polite"></div>
 </body>
 </html>
+
+
+
 
 
 

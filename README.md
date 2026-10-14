@@ -1,6 +1,6 @@
-# Saksham Kumar Ray — portfolio
+# Saksham Kumar Ray — Portfolio
 
-A responsive personal introduction site and project showcase. It uses a fresh editorial visual style and has no package installation or build step.
+A responsive personal introduction website and project showcase, designed with a crisp tech-inspired look, charcoal/purple/blue colors, a glowing abstract hero visual, and a responsive bento project grid. It uses plain HTML, CSS, and JavaScript with no build step.
 
 ## Run locally
 
@@ -12,11 +12,17 @@ py -m http.server 8000
 
 Visit <http://localhost:8000/> and stop the server with `Ctrl+C`. You can also open `index.html` directly; the email copy button works best from a local server.
 
-## Add to it
+## Customize
 
-The homepage already includes Saksham’s shared intro, education, skills, city, email, LinkedIn, and GitHub links. The project cards are editable placeholders until project details and screenshots are ready. Replace each project card in `index.html`; its `data-category` values (`design`, `development`, `experiments`) control the category filters. A profile photo can be added later in the hero art section.
+Update the introduction, education, contact details, skills, and project cards in `index.html`. The project cards are editable placeholders until you add your own work. Keep the `data-category` values (`design`, `development`, `experiments`) to use the category filters.
 
-System fonts are used. Skill logos are included directly in the page, so they work offline and do not need an icon package or CDN. SQL uses a built-in generic database symbol.
+The theme button switches between dark and light palettes and saves your choice in the browser. Skill logos are inline SVGs, so they work offline. The rounded font stack uses fonts available on each device, with sensible fallbacks.
 
-Scroll reveals, animated details, and hover effects are included with expressive motion.
+## Main files
 
+- `index.html` — page content and inline skill icons
+- `style.css` — original layout foundations
+- `theme.css` — theme colors and responsive navigation
+- `motion.css` — scroll reveals, hover feedback, and continuous motion
+- `refresh.css` — current visual design, responsive bento grid, and abstract hero art
+- `script.js` — theme toggle, project filters, and interactions

@@ -87,9 +87,9 @@ function setTheme(theme, save = true) {
   themeToggle?.setAttribute('title', `Switch to ${isDark ? 'light' : 'dark'} theme`);
   const themeLabel = themeToggle?.querySelector('.theme-label');
   if (themeLabel) themeLabel.textContent = isDark ? 'Dark' : 'Light';
-  if (themeColor) themeColor.content = isDark ? '#15151a' : '#f6f4ef';
+  if (themeColor) themeColor.content = isDark ? '#0c0d12' : '#f4f6fb';
   if (save) {
-    try { localStorage.setItem('portfolio-theme', theme); } catch {}
+    try { localStorage.setItem('portfolio-theme-v2', theme); } catch {}
   }
 }
 setTheme(document.documentElement.dataset.theme || 'light', false);
@@ -112,5 +112,8 @@ document.querySelectorAll('.project-visual').forEach((card) => {
   });
 });
 
+
 document.querySelector('#year').textContent = new Date().getFullYear();
+
+
 
