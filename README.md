@@ -16,6 +16,7 @@ Visit <http://localhost:8000/> and stop the server with `Ctrl+C`. You can also o
 
 The homepage already includes Saksham’s shared intro, education, skills, city, email, LinkedIn, and GitHub links. The project cards are editable placeholders until project details and screenshots are ready. Replace each project card in `index.html`; its `data-category` values (`design`, `development`, `experiments`) control the category filters. A profile photo can be added later in the hero art section.
 
-System fonts are used. Skill logos load from the Simple Icons CDN, so an internet connection is needed to show those brand marks. SQL uses a built-in generic database symbol.
+System fonts are used. Skill logos are included directly in the page, so they work offline and do not need an icon package or CDN. SQL uses a built-in generic database symbol.
 
 Scroll reveals, animated details, and hover effects are included with expressive motion.
+
